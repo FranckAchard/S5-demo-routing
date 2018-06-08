@@ -12,6 +12,7 @@ import { BioComponent } from './bio/bio.component';
 import { RealisationsComponent } from './realisations/realisations.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import { RealService } from './real.service';
 
 const routes: Routes = [
   {
@@ -58,7 +59,7 @@ const routes: Routes = [
     FlexLayoutModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [RealService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

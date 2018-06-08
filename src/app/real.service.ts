@@ -7,7 +7,9 @@ import REAL_DATA from './real-data';
 })
 export class RealService {
 
+  listreals = REAL_DATA.reals;
+
   constructor() {
-    console.log(REAL_DATA);
+    // console.log(this.listreals);
   }
 }

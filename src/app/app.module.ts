@@ -11,8 +11,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { BioComponent } from './bio/bio.component';
 import { RealisationsComponent } from './realisations/realisations.component';
 import { ContactComponent } from './contact/contact.component';
+import { PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/bio',
+    pathMatch: 'full'
+  },
   {
     path: 'bio',
     component: BioComponent
@@ -24,6 +30,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 
@@ -33,7 +43,8 @@ const routes: Routes = [
     MyNavComponent,
     BioComponent,
     RealisationsComponent,
-    ContactComponent
+    ContactComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

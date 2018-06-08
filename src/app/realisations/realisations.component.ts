@@ -11,7 +11,7 @@ export class RealisationsComponent implements OnInit {
   constructor(public realService: RealService) { }
 
   ngOnInit() {
-    //console.log(this.realService.listreals);
+    // console.log(this.realService.listreals);
   }
 
 }

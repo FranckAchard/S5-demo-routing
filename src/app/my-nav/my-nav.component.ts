@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'my-nav',
   templateUrl: './my-nav.component.html',
   styleUrls: ['./my-nav.component.css']
